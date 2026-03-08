@@ -1,824 +1,1695 @@
-var a0 = {
-	dname:"Manticore Nest",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Hermalte Port Nest",
-	dBoss:"No Data",
-	Skey:["manti","manticore","manticore nest"]
-}
-var a1 = {
-	dname:"Serpentra Nest",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Hermalte Port Nest",
-	dBoss:"Serpentra",
-	Skey:["sea dragon","serpentra","serpentra nest"]
-}
-var a2 = {
-	dname:"Forsaken Islet",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Charter Ship",
-	dBoss:"No Data",
-	Skey:["Forsaken Islet","fi"]
-}
-var a3 = {
-	dname:"Forsaken Islet Core",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Charter Ship",
-	dBoss:"No Data",
-	Skey:["Forsaken Islet Core","fic"]
-}
-var a4 = {
-	dname:"Sunken Cargo Vessel",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Charter Ship",
-	dBoss:"No Data",
-	Skey:["Sunken Cargo Vessel","Sunken Cargo","Cargo Vessel"]
-}
-var a5 = {
-	dname:"Captain Darlant's Base",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Charter Ship",
-	dBoss:"No Data",
-	Skey:["Captain Darlant's Base","Captain Darlant","Darlant Base"]
-}
-var a6 = {
-	dname:"River Ruins",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Ruined Riverbanks Path",
-	dBoss:"No Data",
-	Skey:["River Ruins"]
-}
-var a7 = {
-	dname:"Flooded Downstream Ruins",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Ruined Riverbanks Path",
-	dBoss:"No Data",
-	Skey:["dlooded downstream ruins"]
-}
-var a8 = {
-	dname:"Ruins of Lost time",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"Ruined Riverbanks Path",
-	dBoss:"No Data",
-	Skey:["Ruins of Lost time"]
-}
-var a9 = {
-	dname:"",
-	dloc:"Hermalte Port",
-	dGate:"South Gate",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a10 = {
-	dname:"Sea of Sand Dust",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Desert of waves Entrance",
-	dBoss:"No Data",
-	Skey:["Sea of Sand Dust","Sea of Sand","Sand Dust"]
-}
-var a11 = {
-	dname:"Disappearing Half Moon Desert",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Desert of waves Entrance",
-	dBoss:"No Data",
-	Skey:["Disappearing Half Moon Desert","Disappearing Half Moon","Half Moon Desert"]
-}
-var a12 = {
-	dname:"Forest of Waiting Noon",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of Shady Blue Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Forest of Waiting Noon","FWN","Waiting Noon","Forest of Waiting"]
-}
-var a13 = {
-	dname:"Swamp of Dead Night",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of Shady Blue Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Swamp of Dead Night","Dead Night","Swamp of Dead"]
-}
-var a14 = {
-	dname:"Silver Cresent Training Ground",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of Shady Blue Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Silver Cresent Training Ground","SCTG","Cresent Training Ground","Silver Cresent"]
-}
-var a15 = {
-	dname:"Crossroad of Hesitant Past",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of little shadow Entrance",
-	dBoss:"No Data",
-	Skey:["Crossroad of Hesitant Past","CHP","Crossroad of Hesitant","Hesitant Past"]
-}
-var a16 = {
-	dname:"Corridor of Tangled Memories",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of little shadow Entrance",
-	dBoss:"No Data",
-	Skey:["Corridor of Tangled Memories","CTM","Tangled Memories"]
-}
-var a17 = {
-	dname:"Passage of Broken Recollections",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of little shadow Entrance",
-	dBoss:"No Data",
-	Skey:["Passage of Broken Recollections","Broken Recollections","PBR"]
-}
-var a18 = {
-	dname:"Golden Meadow",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of New Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Golden Meadow","Meadow"]
-}
-var a19 = {
-	dname:"Bronze Crescent Forest",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of New Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Bronze Crescent Forest","BCF","Bronze Crescent","Crescent Forest"]
-}
-var a20 = {
-	dname:"Valley of Eclipse",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Forest of New Moon Entrance",
-	dBoss:"No Data",
-	Skey:["Valley of Eclipse","VE","Eclipse"]
-}
-var a21 = {
-	dname:"Volcano Nest",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Anu Arendel Nest",
-	dBoss:"No Data",
-	Skey:["Volcano Nest","VN","Volcano"]
-}
-var a22 = {
-	dname:"Guardian Nest",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Anu Arendel Nest",
-	dBoss:"No Data",
-	Skey:["Guardian Nest","GN","Guardian"]
-}
-var a23 = {
-	dname:"Mist Nest",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Anu Arendel Nest",
-	dBoss:"No Data",
-	Skey:["Mist Nest","Mist","MN"]
-}
-var a24 = {
-	dname:"Watcher's Tower",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Lava River Entrance",
-	dBoss:"No Data",
-	Skey:["Watcher's tower","Watchers tower","Watcher tower"]
-}
-var a25 = {
-	dname:"Wailing Wall",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Lava River Entrance",
-	dBoss:"No Data",
-	Skey:["Wailing Wall","WW"]
-}
-var a26 = {
-	dname:"eye of the Goddess",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Lava River Entrance",
-	dBoss:"No Data",
-	Skey:["eye of the Goddess","Eye Goddess","Eye of Goddess"]
-}
-var a27 = {
-	dname:"The Praying Heart",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Lava River Entrance",
-	dBoss:"No Data",
-	Skey:["The Praying Heart","TPH","Praying Heart"]
-}
-var a28 = {
-	dname:"Relic of Fog",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Fire Mountain Entrance",
-	dBoss:"No Data",
-	Skey:["Relic of Fog","Relic Fog"]
-}
-var a29 = {
-	dname:"Shadow Grave",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Fire Mountain Entrance",
-	dBoss:"No Data",
-	Skey:["Shadow Grave"]
-}
-var a30 = {
-	dname:"Flame Canyon",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Fire Mountain Entrance",
-	dBoss:"No Data",
-	Skey:["Flame Canyon"]
-}
-var a31 = {
-	dname:"Abyss of Heat",
-	dloc:"Anu Arendel",
-	dGate:"East Gate",
-	dEnt:"Fire Mountain Entrance",
-	dBoss:"No Data",
-	Skey:["Abyss of Heat","Abyss Heat"]
-}
-var a32 = {
-	dname:"Miracle Altar Conservation Area",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Numara",
-	dBoss:"No Data",
-	Skey:["Miracle Altar Conservation Area","MACA","Miracle Altar","Conservation Area"]
-}
-var a33 = {
-	dname:"Madman's Laboratory",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Numara",
-	dBoss:"No Data",
-	Skey:["Madman's Laboratory","Madman"]
-}
-var a34 = {
-	dname:"Intruder's Forward Base",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Numara",
-	dBoss:"No Data",
-	Skey:["Intruder's Forward Base","Intruders Forward Base","Intruder Forward Base","IFB"]
-}
-var a35 = {
-	dname:"Tel Noir Temple",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Numara",
-	dBoss:"No Data",
-	Skey:["Tel Noir Temple","Tel Noir","Noir Temple","TNT"]
-}
-var a36 = {
-	dname:"Mutant's Habitat",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Meteor Crash Site Entrance",
-	dBoss:"No Data",
-	Skey:["Mutant's Habitat","Mutants Habitat","Mutant Habitat"]
-}
-var a37 = {
-	dname:"Meteor Crash Site Boundaries",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Meteor Crash Site Entrance",
-	dBoss:"No Data",
-	Skey:["Meteor Crash Site Boundaries","MCSB"]
-}
-var a38 = {
-	dname:"Meteor Crash Site Core",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Meteor Crash Site Entrance",
-	dBoss:"No Data",
-	Skey:["Meteor Crash Site Core","MCSC"]
-}
-var a39 = {
-	dname:"Encroached Temple Ruins",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Meteor Crash Site Entrance",
-	dBoss:"No Data",
-	Skey:["Encroached Temple Ruins","Encroached Temple","Temple Ruins","ETR"]
-}
-var a40 = {
-	dname:"Shadow Evil Spirits",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Meteor Crash Site Entrance",
-	dBoss:"No Data",
-	Skey:["Shadow Evil Spirits","SES","Evil Spirits"]
-}
-var a41 = {
-	dname:"Riverwort Village Ruins",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Ruins",
-	dBoss:"No Data",
-	Skey:["Riverwort Village Ruins","RVR","Riverwort Village","Riverwort Ruins"]
-}
-var a42 = {
-	dname:"Dragon Follower Base",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Ruins",
-	dBoss:"No Data",
-	Skey:["Dragon Follower Base","DFB","Dragon Follower","Follower Base"]
-}
-var a43 = {
-	dname:"Valley of Blindness",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Ruins",
-	dBoss:"No Data",
-	Skey:["Valley of Blindness","Valley Blindness"]
-}
-var a44 = {
-	dname:"Queen's Garden",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Ruins",
-	dBoss:"No Data",
-	Skey:["Queen's Garden","Queens Garden","Queen Garden"]
-}
-var a45 = {
-	dname:"Ancient Treasure Warehouse",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Isla Village Entrance",
-	dBoss:"No Data",
-	Skey:["Ancient Treasure Warehouse","ATW","Ancient Treasure","Treasure Warehouse"]
-}
-var a46 = {
-	dname:"Isla Native Village",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Isla Village Entrance",
-	dBoss:"No Data",
-	Skey:["Isla Native Village","INV","Native Village","Isla Native"]
-}
-var a47 = {
-	dname:"Floating Island Beach",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Isla Village Entrance",
-	dBoss:"No Data",
-	Skey:["Floating Island Beach","FIB","Island Beach"]
-}
-var a48 = {
-	dname:"Floating Island Core",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Isla Village Entrance",
-	dBoss:"No Data",
-	Skey:["Floating Island Core","Island Core"]
-}
-var a49 = {
-	dname:"Closed Ice Valley",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Isla Village Entrance",
-	dBoss:"No Data",
-	Skey:["CIV","CLosed Ice Valley","Ice Valley","Closed Ice"]
-}
-var a50 = {
-	dname:"Tel Rosa City",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Rosa Gates",
-	dBoss:"No Data",
-	Skey:["Tel Rosa CIty","TRC","Tel Rosa"]
-}
-var a51 = {
-	dname:"Arnute Canyon",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Rosa Gates",
-	dBoss:"No Data",
-	Skey:["Arnute Canyon"]
-}
-var a52 = {
-	dname:"Occupied Ancient Temple",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Rosa Gates",
-	dBoss:"No Data",
-	Skey:["Occupied Ancient Temple","Occupied Ancient","OAT"]
-}
-var a53 = {
-	dname:"Jasmine Expedition Base",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Tel Rosa Gates",
-	dBoss:"No Data",
-	Skey:["Jasmine Expedition Base","JEB","Jasmine Expedition","Expedition Base"]
-}
-var a54 = {
-	dname:"Professor K Nest",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Nest",
-	dBoss:"No Data",
-	Skey:["Professor K Nest","PKN"]
-}
-var a55 = {
-	dname:"Archbishop Nest",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Nest",
-	dBoss:"No Data",
-	Skey:["Archbishop Nest","ABN"]
-}
-var a56 = {
-	dname:"Green Dragon Nest",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Riverwort Dragon Nest",
-	dBoss:"No Data",
-	Skey:["Green Dragon Nest","GDN"]
-}
-var a57 = {
-	dname:"Ancient Library",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Entrance to Ancient Warehouse",
-	dBoss:"No Data",
-	Skey:["Ancient Library"]
-}
-var a58 = {
-	dname:"East Ancient Armory",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Entrance to Ancient Warehouse",
-	dBoss:"No Data",
-	Skey:["East Ancient Armory","EAA","East Armory"]
-}
-var a59 = {
-	dname:"West Ancient Armory",
-	dloc:"Riverwort Wharf",
-	dGate:"South Gate / Lotus Marsh",
-	dEnt:"Entrance to Ancient Warehouse",
-	dBoss:"No Data",
-	Skey:["West Ancient Armory","WAA","West Armory"]
-}
-var a60 = {
-	dname:"Cathedral Confessional",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Distorted Zone",
-	dBoss:"No Data",
-	Skey:["Cathedral Confessional"]
-}
-var a61 = {
-	dname:"Drysand Swamp",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Distorted Zone",
-	dBoss:"No Data",
-	Skey:["Drysand Swamp"]
-}
-var a62 = {
-	dname:"Granom Nest",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Rhadames Nest",
-	dBoss:"No Data",
-	Skey:["Granom Nest","Granom"]
-}
-var a63 = {
-	dname:"[Trial] Granom Nest",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Rhadames Nest",
-	dBoss:"No Data",
-	Skey:["Trial Granom","TGN"]
-}
-var a64 = {
-	dname:"Daidalos Nest",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Rhadames Nest",
-	dBoss:"No Data",
-	Skey:["Daidalos Nest","Daidalos"]
-}
-var a65 = {
-	dname:"Vulcanus Swamp",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Anti-Goddess Faction's Secret Route",
-	dBoss:"No Data",
-	Skey:["Vulcanus Swamp"]
-}
-var a66 = {
-	dname:"Red Waste",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Anti-Goddess Faction's Secret Route",
-	dBoss:"No Data",
-	Skey:["Red Waste"]
-}
-var a67 = {
-	dname:"Black Lake",
-	dloc:"Rhadames",
-	dGate:"Boundary Gate",
-	dEnt:"Anti-Goddess Faction's Secret Route",
-	dBoss:"No Data",
-	Skey:["Black Lake"]
-}
-var a68 = {
-	dname:"Twisted Spring",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Distorted Zone",
-	dBoss:"No Data",
-	Skey:["Twisted Spring"]
-}
-var a69 = {
-	dname:"Retrogade Highland",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Distorted Zone",
-	dBoss:"No Data",
-	Skey:["Retrogade Highland"]
-}
-var a70 = {
-	dname:"Wasteland Battlefield",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Aorta Gateway",
-	dBoss:"No Data",
-	Skey:["Wasteland Battlefield"]
-}
-var a71 = {
-	dname:"Cradle of the Abandoned",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Aorta Gateway",
-	dBoss:"No Data",
-	Skey:["Cradle of the Abandoned","Cradle Abandoned"]
-}
-var a72 = {
-	dname:"Broken Goldstone Canyon",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Aorta Gateway",
-	dBoss:"No Data",
-	Skey:["Broken Goldstone Canyon","BGC","Broken Goldstone","Goldstone Canyon"]
-}
-var a73 = {
-	dname:"Blue Wind Plains",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Blue Sand Trading Route",
-	dBoss:"No Data",
-	Skey:["Blue Wind Plains","BWP"]
-}
-var a74 = {
-	dname:"Tryan's Territory",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Blue Sand Trading Route",
-	dBoss:"No Data",
-	Skey:["Tryan's Territory","Tryans Territory","Tryan Territory"]
-}
-var a75 = {
-	dname:"Chiron Beach",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Chiron Island",
-	dBoss:"No Data",
-	Skey:["Chiron Beach"]
-}
-var a76 = {
-	dname:"Abandoned Wharf",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Chiron Island",
-	dBoss:"No Data",
-	Skey:["Abandoned Wharf"]
-}
-var a77 = {
-	dname:"Phantom Forest Core",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Chiron Island",
-	dBoss:"No Data",
-	Skey:["Phantom Forest Core","PFC"]
-}
-var a78 = {
-	dname:"",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Chiron Island",
-	dBoss:"No Data",
-	Skey:["Ancient Chiron City","Chiron City","ACC"]
-}
-var a79 = {
-	dname:"Secret Seabed Cave",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Chiron Island",
-	dBoss:"No Data",
-	Skey:["Secret Seabed Cave","Secret Seabed","Seabed Cave","SSC"]
-}
-var a80 = {
-	dname:"Rune Dragon Nest",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Merca's Heart Nest",
-	dBoss:"No Data",
-	Skey:["Rune Dragon Nest","Rune Dragon"]
-}
-var a81 = {
-	dname:"",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Merca's Heart Nest",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a82 = {
-	dname:"",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Merca's Heart Nest",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a83 = {
-	dname:"",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Merca's Heart Nest",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a84 = {
-	dname:"",
-	dloc:"Merca's Heart",
-	dGate:"Boundary Gate",
-	dEnt:"Merca's Heart Nest",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a85 = {
-	dname:"",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:[""]
-}
-var a86 = {
-	dname:"Abandon Welton Hollow",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Lonely Forest Path",
-	dBoss:"No Data",
-	Skey:["Abandon Welton Hollow","Abandon Welton","Welton Hollow","AWW"]
-}
-var a87 = {
-	dname:"Dried Marissa Spring",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Lonely Forest Path",
-	dBoss:"No Data",
-	Skey:["Dried Marissa Spring","Dried Marissa","Marissa Spring","DMS"]
-}
-var a88 = {
-	dname:"Explosion Zone in Withered Leaves Forest",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Lonely Forest Path",
-	dBoss:"No Data",
-	Skey:["Explosion Zone in Withered Leaves Forest","EZWLF","Explosion Zone","Withered Leaves"]
-}
-var a89 = {
-	dname:"Ghost Town of Isolated Forest",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Lonely Forest Path",
-	dBoss:"No Data",
-	Skey:["Ghost Town of Isolated Forest","GTIF","Ghost Town","Isolated Forest"]
-}
-var a90 = {
-	dname:"Dark Mine",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Mine Access",
-	dBoss:"No Data",
-	Skey:["Dark Mine"]
-}
-var a91 = {
-	dname:"Collapse Mine",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Mine Access",
-	dBoss:"No Data",
-	Skey:["Collapse Mine"]
-}
-var a92 = {
-	dname:"Road to Death City",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Mine Access",
-	dBoss:"No Data",
-	Skey:["Road to Death City","RDC","Death City"]
-}
-var a93 = {
-	dname:"Gates to City of Death",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Mine Access",
-	dBoss:"No Data",
-	Skey:["Gates to City of Death","City of Death","GCD"]
-}
-var a94 = {
-	dname:"Nameless Tyrant Tomb",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Mine Access",
-	dBoss:"No Data",
-	Skey:["Nameless Tyrant Tomb","NTT"]
-}
-var a95 = {
-	dname:"Dark Overlord Keep",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Overlord Gates",
-	dBoss:"No Data",
-	Skey:["Dark Overlord Keep","DOK"]
-}
-var a96 = {
-	dname:"Fortress of the Dark Overlord Army",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Overlord Gates",
-	dBoss:"No Data",
-	Skey:["Fortress of the Dark Overlord Army","FDOA","Dark Overlord Army"]
-}
-var a97 = {
-	dname:"Dark Overlord Training Camp",
-	dloc:"Foothills Black Mountain",
-	dGate:"West Gate",
-	dEnt:"Dark Overlord Gates",
-	dBoss:"No Data",
-	Skey:["Dark Overlord Training Camp","DOTC"]
-}
-var a98 = {
-	dname:"Dark Overlord's Tower",
-	dloc:"Sreets of Lotus Palace",
-	dGate:"Lotus Palace",
-	dEnt:"Dark Overlord Gates",
-	dBoss:"No Data",
-	Skey:["Dark Overlord's Tower","DOT"]
-}
-var a99 = {
-	dname:"Lotus Palace Garden",
-	dloc:"Sreets of Lotus Palace",
-	dGate:"Lotus Palace",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:["Lotus Palace Garden","LPG"]
-}
-var a100 = {
-	dname:"Blue Raven Teritorry",
-	dloc:"Sreets of Lotus Palace",
-	dGate:"Lotus Palace",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:["Blue Raven Teritorry","BRT","Blue Raven"]
-}
-var a101 = {
-	dname:"Loser's Exile Place",
-	dloc:"Sreets of Lotus Palace",
-	dGate:"Lotus Palace",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:["Loser's Exile Place","Losers Exile Place","Loser Exile Place"]
-}
-var a102 = {
-	dname:"Great Arena",
-	dloc:"Sreets of Lotus Palace",
-	dGate:"Lotus Palace",
-	dEnt:"",
-	dBoss:"No Data",
-	Skey:["Great Arena"]
+// Dragon Nest SEA Dungeon Database
+const dungeonData = [
+	// ==================== HERMALTE PORT ====================
+	{
+		id: 0,
+		name: "Manticore Nest",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Hermalte Port Nest",
+		boss: "Manticore",
+		type: "Nest",
+		level: 40,
+		partySize: 4,
+		description: "A nest filled with poisonous creatures led by the mighty Manticore.",
+		keywords: ["manti", "manticore", "manticore nest", "mn"],
+		mapX: 15,
+		mapY: 70
+	},
+	{
+		id: 1,
+		name: "Serpentra Nest (Sea Dragon)",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Hermalte Port Nest",
+		boss: "Serpentra",
+		type: "Nest",
+		level: 40,
+		partySize: 8,
+		description: "The legendary Sea Dragon nest, one of the most challenging raids.",
+		keywords: ["sea dragon", "serpentra", "serpentra nest", "sn", "sdl"],
+		mapX: 20,
+		mapY: 65
+	},
+	{
+		id: 2,
+		name: "Forsaken Islet",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Charter Ship",
+		boss: "Pirate Captain",
+		type: "Dungeon",
+		level: 24,
+		partySize: 4,
+		description: "A small island filled with pirates and sea creatures.",
+		keywords: ["forsaken islet", "fi"],
+		mapX: 10,
+		mapY: 50
+	},
+	{
+		id: 3,
+		name: "Forsaken Islet Core",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Charter Ship",
+		boss: "Pirate King",
+		type: "Dungeon",
+		level: 28,
+		partySize: 4,
+		description: "The core of the Forsaken Islet with stronger enemies.",
+		keywords: ["forsaken islet core", "fic"],
+		mapX: 12,
+		mapY: 52
+	},
+	{
+		id: 4,
+		name: "Sunken Cargo Vessel",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Charter Ship",
+		boss: "Ghost Captain",
+		type: "Dungeon",
+		level: 26,
+		partySize: 4,
+		description: "A sunken cargo vessel filled with treasure and ghosts.",
+		keywords: ["sunken cargo vessel", "sunken cargo", "cargo vessel", "scv"],
+		mapX: 15,
+		mapY: 55
+	},
+	{
+		id: 5,
+		name: "Captain Darlant's Base",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Charter Ship",
+		boss: "Captain Darlant",
+		type: "Dungeon",
+		level: 32,
+		partySize: 4,
+		description: "The base of the infamous Captain Darlant.",
+		keywords: ["captain darlant's base", "captain darlant", "darlant base", "cdb"],
+		mapX: 18,
+		mapY: 58
+	},
+	{
+		id: 6,
+		name: "River Ruins",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Ruined Riverbanks Path",
+		boss: "Ancient Guardian",
+		type: "Dungeon",
+		level: 24,
+		partySize: 4,
+		description: "The ruins of an ancient river city.",
+		keywords: ["river ruins", "rr"],
+		mapX: 12,
+		mapY: 48
+	},
+	{
+		id: 7,
+		name: "Flooded Downstream Ruins",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Ruined Riverbanks Path",
+		boss: "Water Spirit",
+		type: "Dungeon",
+		level: 26,
+		partySize: 4,
+		description: "Flooded ruins with water creatures.",
+		keywords: ["flooded downstream ruins", "fdr"],
+		mapX: 10,
+		mapY: 45
+	},
+	{
+		id: 8,
+		name: "Ruins of Lost Time",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Ruined Riverbanks Path",
+		boss: "Time Keeper",
+		type: "Dungeon",
+		level: 28,
+		partySize: 4,
+		description: "Ancient ruins filled with temporal anomalies.",
+		keywords: ["ruins of lost time", "rlt"],
+		mapX: 15,
+		mapY: 42
+	},
+
+	// ==================== ANU ARENDEL ====================
+	{
+		id: 10,
+		name: "Sea of Sand Dust",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Desert of Waves Entrance",
+		boss: "Sand Worm",
+		type: "Dungeon",
+		level: 32,
+		partySize: 4,
+		description: "A vast desert filled with sand worms.",
+		keywords: ["sea of sand dust", "sea of sand", "sand dust", "ssd"],
+		mapX: 55,
+		mapY: 35
+	},
+	{
+		id: 11,
+		name: "Disappearing Half Moon Desert",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Desert of Waves Entrance",
+		boss: "Mirage Lord",
+		type: "Dungeon",
+		level: 34,
+		partySize: 4,
+		description: "A mysterious desert that appears and disappears.",
+		keywords: ["disappearing half moon desert", "half moon desert", "dhmd"],
+		mapX: 58,
+		mapY: 38
+	},
+	{
+		id: 12,
+		name: "Forest of Waiting Noon",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Shady Blue Moon Entrance",
+		boss: "Forest Guardian",
+		type: "Dungeon",
+		level: 36,
+		partySize: 4,
+		description: "A mystical forest with ancient creatures.",
+		keywords: ["forest of waiting noon", "fwn", "waiting noon"],
+		mapX: 60,
+		mapY: 42
+	},
+	{
+		id: 13,
+		name: "Swamp of Dead Night",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Shady Blue Moon Entrance",
+		boss: "Swamp Witch",
+		type: "Dungeon",
+		level: 38,
+		partySize: 4,
+		description: "A dark swamp filled with undead.",
+		keywords: ["swamp of dead night", "dead night", "sdn"],
+		mapX: 62,
+		mapY: 45
+	},
+	{
+		id: 14,
+		name: "Silver Crescent Training Ground",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Shady Blue Moon Entrance",
+		boss: "Training Master",
+		type: "Dungeon",
+		level: 40,
+		partySize: 4,
+		description: "A training ground for elite warriors.",
+		keywords: ["silver crescent training ground", "sctg", "crescent training"],
+		mapX: 65,
+		mapY: 48
+	},
+	{
+		id: 15,
+		name: "Crossroad of Hesitant Past",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Little Shadow Entrance",
+		boss: "Memory Spirit",
+		type: "Dungeon",
+		level: 42,
+		partySize: 4,
+		description: "A crossroad filled with memories of the past.",
+		keywords: ["crossroad of hesitant past", "chp", "hesitant past"],
+		mapX: 68,
+		mapY: 52
+	},
+	{
+		id: 16,
+		name: "Corridor of Tangled Memories",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Little Shadow Entrance",
+		boss: "Memory Weaver",
+		type: "Dungeon",
+		level: 44,
+		partySize: 4,
+		description: "A corridor where memories become reality.",
+		keywords: ["corridor of tangled memories", "ctm", "tangled memories"],
+		mapX: 70,
+		mapY: 55
+	},
+	{
+		id: 17,
+		name: "Passage of Broken Recollections",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of Little Shadow Entrance",
+		boss: "Broken Soul",
+		type: "Dungeon",
+		level: 46,
+		partySize: 4,
+		description: "A passage filled with fragmented memories.",
+		keywords: ["passage of broken recollections", "pbr", "broken recollections"],
+		mapX: 72,
+		mapY: 58
+	},
+	{
+		id: 18,
+		name: "Golden Meadow",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of New Moon Entrance",
+		boss: "Golden Stag",
+		type: "Dungeon",
+		level: 48,
+		partySize: 4,
+		description: "A beautiful meadow with golden flowers.",
+		keywords: ["golden meadow", "meadow", "gm"],
+		mapX: 75,
+		mapY: 62
+	},
+	{
+		id: 19,
+		name: "Bronze Crescent Forest",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of New Moon Entrance",
+		boss: "Bronze Treant",
+		type: "Dungeon",
+		level: 50,
+		partySize: 4,
+		description: "An ancient forest with bronze-colored trees.",
+		keywords: ["bronze crescent forest", "bcf", "bronze crescent"],
+		mapX: 78,
+		mapY: 65
+	},
+	{
+		id: 20,
+		name: "Valley of Eclipse",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Forest of New Moon Entrance",
+		boss: "Eclipse Lord",
+		type: "Dungeon",
+		level: 52,
+		partySize: 4,
+		description: "A valley shrouded in eternal darkness.",
+		keywords: ["valley of eclipse", "ve", "eclipse"],
+		mapX: 80,
+		mapY: 68
+	},
+	{
+		id: 21,
+		name: "Volcano Nest",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Anu Arendel Nest",
+		boss: "Volcano Lord",
+		type: "Nest",
+		level: 60,
+		partySize: 4,
+		description: "A nest within an active volcano.",
+		keywords: ["volcano nest", "vn", "volcano"],
+		mapX: 82,
+		mapY: 72
+	},
+	{
+		id: 22,
+		name: "Guardian Nest",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Anu Arendel Nest",
+		boss: "Guardian",
+		type: "Nest",
+		level: 60,
+		partySize: 4,
+		description: "A nest protected by ancient guardians.",
+		keywords: ["guardian nest", "gn", "guardian"],
+		mapX: 84,
+		mapY: 75
+	},
+	{
+		id: 23,
+		name: "Mist Nest",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Anu Arendel Nest",
+		boss: "Mist Lord",
+		type: "Nest",
+		level: 60,
+		partySize: 4,
+		description: "A nest hidden within eternal mist.",
+		keywords: ["mist nest", "mist", "mn"],
+		mapX: 86,
+		mapY: 78
+	},
+	{
+		id: 24,
+		name: "Watcher's Tower",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Lava River Entrance",
+		boss: "Watcher",
+		type: "Dungeon",
+		level: 54,
+		partySize: 4,
+		description: "An ancient tower guarded by watchers.",
+		keywords: ["watcher's tower", "watchers tower", "watcher tower", "wt"],
+		mapX: 88,
+		mapY: 80
+	},
+	{
+		id: 25,
+		name: "Wailing Wall",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Lava River Entrance",
+		boss: "Wailing Spirit",
+		type: "Dungeon",
+		level: 56,
+		partySize: 4,
+		description: "A wall where spirits wail eternally.",
+		keywords: ["wailing wall", "ww"],
+		mapX: 90,
+		mapY: 82
+	},
+	{
+		id: 26,
+		name: "Eye of the Goddess",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Lava River Entrance",
+		boss: "Goddess Avatar",
+		type: "Dungeon",
+		level: 58,
+		partySize: 4,
+		description: "A sacred place watched by the Goddess.",
+		keywords: ["eye of the goddess", "eye goddess", "eog"],
+		mapX: 92,
+		mapY: 85
+	},
+	{
+		id: 27,
+		name: "The Praying Heart",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Lava River Entrance",
+		boss: "Prayer Guardian",
+		type: "Dungeon",
+		level: 60,
+		partySize: 4,
+		description: "A sacred heart where prayers are answered.",
+		keywords: ["the praying heart", "praying heart", "tph"],
+		mapX: 94,
+		mapY: 88
+	},
+	{
+		id: 28,
+		name: "Relic of Fog",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Fire Mountain Entrance",
+		boss: "Fog Elemental",
+		type: "Dungeon",
+		level: 62,
+		partySize: 4,
+		description: "Ancient relics hidden in fog.",
+		keywords: ["relic of fog", "relic fog", "rof"],
+		mapX: 96,
+		mapY: 90
+	},
+	{
+		id: 29,
+		name: "Shadow Grave",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Fire Mountain Entrance",
+		boss: "Shadow Lord",
+		type: "Dungeon",
+		level: 64,
+		partySize: 4,
+		description: "A grave filled with shadow creatures.",
+		keywords: ["shadow grave", "sg"],
+		mapX: 98,
+		mapY: 92
+	},
+	{
+		id: 30,
+		name: "Flame Canyon",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Fire Mountain Entrance",
+		boss: "Flame Dragon",
+		type: "Dungeon",
+		level: 66,
+		partySize: 4,
+		description: "A canyon filled with flames.",
+		keywords: ["flame canyon", "fc"],
+		mapX: 100,
+		mapY: 94
+	},
+	{
+		id: 31,
+		name: "Abyss of Heat",
+		location: "Anu Arendel",
+		gate: "East Gate",
+		entrance: "Fire Mountain Entrance",
+		boss: "Heat Lord",
+		type: "Dungeon",
+		level: 68,
+		partySize: 4,
+		description: "An abyss of extreme heat.",
+		keywords: ["abyss of heat", "abyss heat", "aoh"],
+		mapX: 102,
+		mapY: 96
+	},
+
+	// ==================== RIVERWORT WHARF ====================
+	{
+		id: 32,
+		name: "Miracle Altar Conservation Area",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Numara",
+		boss: "Altar Guardian",
+		type: "Dungeon",
+		level: 50,
+		partySize: 4,
+		description: "A conservation area protecting an ancient altar.",
+		keywords: ["miracle altar conservation area", "maca", "miracle altar"],
+		mapX: 35,
+		mapY: 25
+	},
+	{
+		id: 33,
+		name: "Madman's Laboratory",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Numara",
+		boss: "Mad Doctor",
+		type: "Dungeon",
+		level: 52,
+		partySize: 4,
+		description: "A laboratory of a mad scientist.",
+		keywords: ["madman's laboratory", "madman", "ml"],
+		mapX: 37,
+		mapY: 28
+	},
+	{
+		id: 34,
+		name: "Intruder's Forward Base",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Numara",
+		boss: "Intruder Commander",
+		type: "Dungeon",
+		level: 54,
+		partySize: 4,
+		description: "A forward base of mysterious intruders.",
+		keywords: ["intruder's forward base", "ifb", "intruder forward base"],
+		mapX: 39,
+		mapY: 30
+	},
+	{
+		id: 35,
+		name: "Tel Noir Temple",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Numara",
+		boss: "Temple Priest",
+		type: "Dungeon",
+		level: 56,
+		partySize: 4,
+		description: "An ancient temple of Tel Noir.",
+		keywords: ["tel noir temple", "tel noir", "noir temple", "tnt"],
+		mapX: 41,
+		mapY: 32
+	},
+	{
+		id: 36,
+		name: "Mutant's Habitat",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Meteor Crash Site Entrance",
+		boss: "Mutant King",
+		type: "Dungeon",
+		level: 58,
+		partySize: 4,
+		description: "A habitat of mutated creatures.",
+		keywords: ["mutant's habitat", "mutants habitat", "mutant habitat", "mh"],
+		mapX: 43,
+		mapY: 35
+	},
+	{
+		id: 37,
+		name: "Meteor Crash Site Boundaries",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Meteor Crash Site Entrance",
+		boss: "Meteor Guardian",
+		type: "Dungeon",
+		level: 60,
+		partySize: 4,
+		description: "The boundaries of a meteor crash site.",
+		keywords: ["meteor crash site boundaries", "mcsb"],
+		mapX: 45,
+		mapY: 38
+	},
+	{
+		id: 38,
+		name: "Meteor Crash Site Core",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Meteor Crash Site Entrance",
+		boss: "Meteor Core",
+		type: "Dungeon",
+		level: 62,
+		partySize: 4,
+		description: "The core of the meteor crash site.",
+		keywords: ["meteor crash site core", "mcsc"],
+		mapX: 47,
+		mapY: 40
+	},
+	{
+		id: 39,
+		name: "Encroached Temple Ruins",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Meteor Crash Site Entrance",
+		boss: "Temple Spirit",
+		type: "Dungeon",
+		level: 64,
+		partySize: 4,
+		description: "Ruins of an encroached temple.",
+		keywords: ["encroached temple ruins", "encroached temple", "temple ruins", "etr"],
+		mapX: 49,
+		mapY: 42
+	},
+	{
+		id: 40,
+		name: "Shadow Evil Spirits",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Meteor Crash Site Entrance",
+		boss: "Evil Spirit Lord",
+		type: "Dungeon",
+		level: 66,
+		partySize: 4,
+		description: "An area infested with evil spirits.",
+		keywords: ["shadow evil spirits", "ses", "evil spirits"],
+		mapX: 51,
+		mapY: 45
+	},
+	{
+		id: 41,
+		name: "Riverwort Village Ruins",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Ruins",
+		boss: "Village Chief Ghost",
+		type: "Dungeon",
+		level: 68,
+		partySize: 4,
+		description: "Ruins of the old Riverwort Village.",
+		keywords: ["riverwort village ruins", "rvr", "riverwort village"],
+		mapX: 53,
+		mapY: 48
+	},
+	{
+		id: 42,
+		name: "Dragon Follower Base",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Ruins",
+		boss: "Dragon Follower Leader",
+		type: "Dungeon",
+		level: 70,
+		partySize: 4,
+		description: "A base of the Dragon Followers.",
+		keywords: ["dragon follower base", "dfb", "dragon follower"],
+		mapX: 55,
+		mapY: 50
+	},
+	{
+		id: 43,
+		name: "Valley of Blindness",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Ruins",
+		boss: "Blind Guardian",
+		type: "Dungeon",
+		level: 72,
+		partySize: 4,
+		description: "A valley that blinds all who enter.",
+		keywords: ["valley of blindness", "valley blindness", "vob"],
+		mapX: 57,
+		mapY: 52
+	},
+	{
+		id: 44,
+		name: "Queen's Garden",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Ruins",
+		boss: "Garden Keeper",
+		type: "Dungeon",
+		level: 74,
+		partySize: 4,
+		description: "A beautiful but dangerous garden.",
+		keywords: ["queen's garden", "queens garden", "queen garden", "qg"],
+		mapX: 59,
+		mapY: 55
+	},
+	{
+		id: 45,
+		name: "Ancient Treasure Warehouse",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Isla Village Entrance",
+		boss: "Treasure Guardian",
+		type: "Dungeon",
+		level: 76,
+		partySize: 4,
+		description: "An ancient warehouse filled with treasure.",
+		keywords: ["ancient treasure warehouse", "atw", "ancient treasure"],
+		mapX: 61,
+		mapY: 58
+	},
+	{
+		id: 46,
+		name: "Isla Native Village",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Isla Village Entrance",
+		boss: "Village Chief",
+		type: "Dungeon",
+		level: 78,
+		partySize: 4,
+		description: "A native village on Isla.",
+		keywords: ["isla native village", "inv", "native village"],
+		mapX: 63,
+		mapY: 60
+	},
+	{
+		id: 47,
+		name: "Floating Island Beach",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Isla Village Entrance",
+		boss: "Beach Guardian",
+		type: "Dungeon",
+		level: 80,
+		partySize: 4,
+		description: "A beach on a floating island.",
+		keywords: ["floating island beach", "fib", "island beach"],
+		mapX: 65,
+		mapY: 62
+	},
+	{
+		id: 48,
+		name: "Floating Island Core",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Isla Village Entrance",
+		boss: "Island Core",
+		type: "Dungeon",
+		level: 82,
+		partySize: 4,
+		description: "The core of the floating island.",
+		keywords: ["floating island core", "island core", "fic"],
+		mapX: 67,
+		mapY: 65
+	},
+	{
+		id: 49,
+		name: "Closed Ice Valley",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Isla Village Entrance",
+		boss: "Ice Lord",
+		type: "Dungeon",
+		level: 84,
+		partySize: 4,
+		description: "A closed valley filled with ice.",
+		keywords: ["closed ice valley", "civ", "ice valley"],
+		mapX: 69,
+		mapY: 68
+	},
+	{
+		id: 50,
+		name: "Tel Rosa City",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Rosa Gates",
+		boss: "City Guardian",
+		type: "Dungeon",
+		level: 86,
+		partySize: 4,
+		description: "The ancient city of Tel Rosa.",
+		keywords: ["tel rosa city", "trc", "tel rosa"],
+		mapX: 71,
+		mapY: 70
+	},
+	{
+		id: 51,
+		name: "Arnute Canyon",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Rosa Gates",
+		boss: "Canyon Wraith",
+		type: "Dungeon",
+		level: 88,
+		partySize: 4,
+		description: "A deep canyon with dangerous creatures.",
+		keywords: ["arnute canyon", "ac"],
+		mapX: 73,
+		mapY: 72
+	},
+	{
+		id: 52,
+		name: "Occupied Ancient Temple",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Rosa Gates",
+		boss: "Temple Occupier",
+		type: "Dungeon",
+		level: 90,
+		partySize: 4,
+		description: "An ancient temple occupied by enemies.",
+		keywords: ["occupied ancient temple", "oat", "occupied ancient"],
+		mapX: 75,
+		mapY: 75
+	},
+	{
+		id: 53,
+		name: "Jasmine Expedition Base",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Tel Rosa Gates",
+		boss: "Expedition Leader",
+		type: "Dungeon",
+		level: 92,
+		partySize: 4,
+		description: "Base of Jasmine's expedition.",
+		keywords: ["jasmine expedition base", "jeb", "jasmine expedition"],
+		mapX: 77,
+		mapY: 78
+	},
+	{
+		id: 54,
+		name: "Professor K Nest",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Nest",
+		boss: "Professor K",
+		type: "Nest",
+		level: 50,
+		partySize: 4,
+		description: "The nest of the mad Professor K.",
+		keywords: ["professor k nest", "pkn", "professor k"],
+		mapX: 40,
+		mapY: 20
+	},
+	{
+		id: 55,
+		name: "Archbishop Nest",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Nest",
+		boss: "Archbishop",
+		type: "Nest",
+		level: 50,
+		partySize: 4,
+		description: "The nest of the fallen Archbishop.",
+		keywords: ["archbishop nest", "abn", "archbishop"],
+		mapX: 42,
+		mapY: 22
+	},
+	{
+		id: 56,
+		name: "Green Dragon Nest",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Riverwort Dragon Nest",
+		boss: "Green Dragon",
+		type: "Nest",
+		level: 60,
+		partySize: 8,
+		description: "The legendary Green Dragon nest.",
+		keywords: ["green dragon nest", "gdn", "green dragon"],
+		mapX: 44,
+		mapY: 24
+	},
+	{
+		id: 57,
+		name: "Ancient Library",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Entrance to Ancient Warehouse",
+		boss: "Library Guardian",
+		type: "Dungeon",
+		level: 70,
+		partySize: 4,
+		description: "An ancient library with forbidden knowledge.",
+		keywords: ["ancient library", "al"],
+		mapX: 46,
+		mapY: 26
+	},
+	{
+		id: 58,
+		name: "East Ancient Armory",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Entrance to Ancient Warehouse",
+		boss: "Armory Guardian",
+		type: "Dungeon",
+		level: 72,
+		partySize: 4,
+		description: "The eastern section of the ancient armory.",
+		keywords: ["east ancient armory", "eaa", "east armory"],
+		mapX: 48,
+		mapY: 28
+	},
+	{
+		id: 59,
+		name: "West Ancient Armory",
+		location: "Riverwort Wharf",
+		gate: "South Gate / Lotus Marsh",
+		entrance: "Entrance to Ancient Warehouse",
+		boss: "Armory Guardian",
+		type: "Dungeon",
+		level: 72,
+		partySize: 4,
+		description: "The western section of the ancient armory.",
+		keywords: ["west ancient armory", "waa", "west armory"],
+		mapX: 50,
+		mapY: 30
+	},
+
+	// ==================== RHADAMES ====================
+	{
+		id: 60,
+		name: "Cathedral Confessional",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Distorted Zone",
+		boss: "Confessor",
+		type: "Dungeon",
+		level: 80,
+		partySize: 4,
+		description: "A cathedral filled with dark secrets.",
+		keywords: ["cathedral confessional", "cc"],
+		mapX: 25,
+		mapY: 40
+	},
+	{
+		id: 61,
+		name: "Drysand Swamp",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Distorted Zone",
+		boss: "Swamp Creature",
+		type: "Dungeon",
+		level: 82,
+		partySize: 4,
+		description: "A dry swamp with dangerous creatures.",
+		keywords: ["drysand swamp", "ds"],
+		mapX: 27,
+		mapY: 42
+	},
+	{
+		id: 62,
+		name: "Granom Nest",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Rhadames Nest",
+		boss: "Granom",
+		type: "Nest",
+		level: 80,
+		partySize: 4,
+		description: "The nest of Granom.",
+		keywords: ["granom nest", "granom"],
+		mapX: 29,
+		mapY: 44
+	},
+	{
+		id: 63,
+		name: "[Trial] Granom Nest",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Rhadames Nest",
+		boss: "Granom",
+		type: "Nest",
+		level: 80,
+		partySize: 4,
+		description: "Trial version of Granom Nest.",
+		keywords: ["trial granom", "tgn", "trial granom nest"],
+		mapX: 31,
+		mapY: 46
+	},
+	{
+		id: 64,
+		name: "Daidalos Nest",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Rhadames Nest",
+		boss: "Daidalos",
+		type: "Nest",
+		level: 90,
+		partySize: 4,
+		description: "The nest of Daidalos.",
+		keywords: ["daidalos nest", "daidalos", "dn"],
+		mapX: 33,
+		mapY: 48
+	},
+	{
+		id: 65,
+		name: "Vulcanus Swamp",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Anti-Goddess Faction's Secret Route",
+		boss: "Vulcanus",
+		type: "Dungeon",
+		level: 84,
+		partySize: 4,
+		description: "A volcanic swamp.",
+		keywords: ["vulcanus swamp", "vs"],
+		mapX: 35,
+		mapY: 50
+	},
+	{
+		id: 66,
+		name: "Red Waste",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Anti-Goddess Faction's Secret Route",
+		boss: "Waste Lord",
+		type: "Dungeon",
+		level: 86,
+		partySize: 4,
+		description: "A wasteland of red sand.",
+		keywords: ["red waste", "rw"],
+		mapX: 37,
+		mapY: 52
+	},
+	{
+		id: 67,
+		name: "Black Lake",
+		location: "Rhadames",
+		gate: "Boundary Gate",
+		entrance: "Anti-Goddess Faction's Secret Route",
+		boss: "Lake Creature",
+		type: "Dungeon",
+		level: 88,
+		partySize: 4,
+		description: "A dark lake with mysterious creatures.",
+		keywords: ["black lake", "bl"],
+		mapX: 39,
+		mapY: 54
+	},
+
+	// ==================== MERCA'S HEART ====================
+	{
+		id: 68,
+		name: "Twisted Spring",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Distorted Zone",
+		boss: "Spring Spirit",
+		type: "Dungeon",
+		level: 90,
+		partySize: 4,
+		description: "A twisted spring with corrupted water.",
+		keywords: ["twisted spring", "ts"],
+		mapX: 70,
+		mapY: 30
+	},
+	{
+		id: 69,
+		name: "Retrograde Highland",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Distorted Zone",
+		boss: "Highland Guardian",
+		type: "Dungeon",
+		level: 92,
+		partySize: 4,
+		description: "A highland that moves backwards in time.",
+		keywords: ["retrograde highland", "rh"],
+		mapX: 72,
+		mapY: 32
+	},
+	{
+		id: 70,
+		name: "Wasteland Battlefield",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Aorta Gateway",
+		boss: "Battlefield Commander",
+		type: "Dungeon",
+		level: 94,
+		partySize: 4,
+		description: "An ancient battlefield.",
+		keywords: ["wasteland battlefield", "wb"],
+		mapX: 74,
+		mapY: 34
+	},
+	{
+		id: 71,
+		name: "Cradle of the Abandoned",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Aorta Gateway",
+		boss: "Abandoned Soul",
+		type: "Dungeon",
+		level: 96,
+		partySize: 4,
+		description: "A cradle where the abandoned rest.",
+		keywords: ["cradle of the abandoned", "cradle abandoned", "cota"],
+		mapX: 76,
+		mapY: 36
+	},
+	{
+		id: 72,
+		name: "Broken Goldstone Canyon",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Aorta Gateway",
+		boss: "Goldstone Golem",
+		type: "Dungeon",
+		level: 98,
+		partySize: 4,
+		description: "A canyon filled with goldstone.",
+		keywords: ["broken goldstone canyon", "bgc", "goldstone canyon"],
+		mapX: 78,
+		mapY: 38
+	},
+	{
+		id: 73,
+		name: "Blue Wind Plains",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Blue Sand Trading Route",
+		boss: "Wind Spirit",
+		type: "Dungeon",
+		level: 100,
+		partySize: 4,
+		description: "Plains with constant blue winds.",
+		keywords: ["blue wind plains", "bwp"],
+		mapX: 80,
+		mapY: 40
+	},
+	{
+		id: 74,
+		name: "Tryan's Territory",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Blue Sand Trading Route",
+		boss: "Tryan",
+		type: "Dungeon",
+		level: 102,
+		partySize: 4,
+		description: "The territory of Tryan.",
+		keywords: ["tryan's territory", "tryans territory", "tryan territory", "tt"],
+		mapX: 82,
+		mapY: 42
+	},
+	{
+		id: 75,
+		name: "Chiron Beach",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Chiron Island",
+		boss: "Beach Lord",
+		type: "Dungeon",
+		level: 104,
+		partySize: 4,
+		description: "A beach on Chiron Island.",
+		keywords: ["chiron beach", "cb"],
+		mapX: 84,
+		mapY: 44
+	},
+	{
+		id: 76,
+		name: "Abandoned Wharf",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Chiron Island",
+		boss: "Wharf Ghost",
+		type: "Dungeon",
+		level: 106,
+		partySize: 4,
+		description: "An abandoned wharf.",
+		keywords: ["abandoned wharf", "aw"],
+		mapX: 86,
+		mapY: 46
+	},
+	{
+		id: 77,
+		name: "Phantom Forest Core",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Chiron Island",
+		boss: "Phantom Lord",
+		type: "Dungeon",
+		level: 108,
+		partySize: 4,
+		description: "The core of the phantom forest.",
+		keywords: ["phantom forest core", "pfc"],
+		mapX: 88,
+		mapY: 48
+	},
+	{
+		id: 78,
+		name: "Ancient Chiron City",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Chiron Island",
+		boss: "City Guardian",
+		type: "Dungeon",
+		level: 110,
+		partySize: 4,
+		description: "An ancient city on Chiron.",
+		keywords: ["ancient chiron city", "chiron city", "acc"],
+		mapX: 90,
+		mapY: 50
+	},
+	{
+		id: 79,
+		name: "Secret Seabed Cave",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Chiron Island",
+		boss: "Sea Creature",
+		type: "Dungeon",
+		level: 112,
+		partySize: 4,
+		description: "A secret cave under the sea.",
+		keywords: ["secret seabed cave", "ssc", "seabed cave"],
+		mapX: 92,
+		mapY: 52
+	},
+	{
+		id: 80,
+		name: "Rune Dragon Nest",
+		location: "Merca's Heart",
+		gate: "Boundary Gate",
+		entrance: "Merca's Heart Nest",
+		boss: "Rune Dragon",
+		type: "Nest",
+		level: 95,
+		partySize: 8,
+		description: "The legendary Rune Dragon nest.",
+		keywords: ["rune dragon nest", "rune dragon", "rdn"],
+		mapX: 94,
+		mapY: 35
+	},
+
+	// ==================== FOOTHILLS BLACK MOUNTAIN ====================
+	{
+		id: 86,
+		name: "Abandoned Welton Hollow",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Lonely Forest Path",
+		boss: "Hollow Spirit",
+		type: "Dungeon",
+		level: 40,
+		partySize: 4,
+		description: "An abandoned hollow in Welton.",
+		keywords: ["abandoned welton hollow", "abandon welton", "welton hollow", "awh"],
+		mapX: 10,
+		mapY: 80
+	},
+	{
+		id: 87,
+		name: "Dried Marissa Spring",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Lonely Forest Path",
+		boss: "Spring Dryad",
+		type: "Dungeon",
+		level: 42,
+		partySize: 4,
+		description: "A dried spring that once flowed.",
+		keywords: ["dried marissa spring", "dried marissa", "marissa spring", "dms"],
+		mapX: 12,
+		mapY: 82
+	},
+	{
+		id: 88,
+		name: "Explosion Zone in Withered Leaves Forest",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Lonely Forest Path",
+		boss: "Explosion Elemental",
+		type: "Dungeon",
+		level: 44,
+		partySize: 4,
+		description: "A zone with constant explosions.",
+		keywords: ["explosion zone in withered leaves forest", "ezwlf", "explosion zone"],
+		mapX: 14,
+		mapY: 84
+	},
+	{
+		id: 89,
+		name: "Ghost Town of Isolated Forest",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Lonely Forest Path",
+		boss: "Ghost Mayor",
+		type: "Dungeon",
+		level: 46,
+		partySize: 4,
+		description: "A ghost town in an isolated forest.",
+		keywords: ["ghost town of isolated forest", "gtif", "ghost town"],
+		mapX: 16,
+		mapY: 86
+	},
+	{
+		id: 90,
+		name: "Dark Mine",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Mine Access",
+		boss: "Mine Guardian",
+		type: "Dungeon",
+		level: 48,
+		partySize: 4,
+		description: "A dark mine with precious ores.",
+		keywords: ["dark mine", "dm"],
+		mapX: 18,
+		mapY: 88
+	},
+	{
+		id: 91,
+		name: "Collapse Mine",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Mine Access",
+		boss: "Mine Creature",
+		type: "Dungeon",
+		level: 50,
+		partySize: 4,
+		description: "A collapsed mine.",
+		keywords: ["collapse mine", "cm"],
+		mapX: 20,
+		mapY: 90
+	},
+	{
+		id: 92,
+		name: "Road to Death City",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Mine Access",
+		boss: "Road Guardian",
+		type: "Dungeon",
+		level: 52,
+		partySize: 4,
+		description: "The road leading to Death City.",
+		keywords: ["road to death city", "rdc", "death city"],
+		mapX: 22,
+		mapY: 92
+	},
+	{
+		id: 93,
+		name: "Gates to City of Death",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Mine Access",
+		boss: "Gate Keeper",
+		type: "Dungeon",
+		level: 54,
+		partySize: 4,
+		description: "The gates to the City of Death.",
+		keywords: ["gates to city of death", "city of death", "gcd"],
+		mapX: 24,
+		mapY: 94
+	},
+	{
+		id: 94,
+		name: "Nameless Tyrant Tomb",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Mine Access",
+		boss: "Tyrant Ghost",
+		type: "Dungeon",
+		level: 56,
+		partySize: 4,
+		description: "A tomb of a nameless tyrant.",
+		keywords: ["nameless tyrant tomb", "ntt"],
+		mapX: 26,
+		mapY: 96
+	},
+	{
+		id: 95,
+		name: "Dark Overlord Keep",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Overlord Gates",
+		boss: "Dark Overlord",
+		type: "Dungeon",
+		level: 58,
+		partySize: 4,
+		description: "The keep of the Dark Overlord.",
+		keywords: ["dark overlord keep", "dok"],
+		mapX: 28,
+		mapY: 98
+	},
+	{
+		id: 96,
+		name: "Fortress of the Dark Overlord Army",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Overlord Gates",
+		boss: "Army Commander",
+		type: "Dungeon",
+		level: 60,
+		partySize: 4,
+		description: "The fortress of the Dark Overlord's army.",
+		keywords: ["fortress of the dark overlord army", "fdoa", "dark overlord army"],
+		mapX: 30,
+		mapY: 100
+	},
+	{
+		id: 97,
+		name: "Dark Overlord Training Camp",
+		location: "Foothills Black Mountain",
+		gate: "West Gate",
+		entrance: "Dark Overlord Gates",
+		boss: "Training Master",
+		type: "Dungeon",
+		level: 62,
+		partySize: 4,
+		description: "Training camp for Dark Overlord's army.",
+		keywords: ["dark overlord training camp", "dotc"],
+		mapX: 32,
+		mapY: 102
+	},
+
+	// ==================== STREETS OF LOTUS PALACE ====================
+	{
+		id: 98,
+		name: "Dark Overlord's Tower",
+		location: "Streets of Lotus Palace",
+		gate: "Lotus Palace",
+		entrance: "Dark Overlord Gates",
+		boss: "Dark Overlord",
+		type: "Nest",
+		level: 60,
+		partySize: 4,
+		description: "The tower of the Dark Overlord.",
+		keywords: ["dark overlord's tower", "dot", "dark overlord tower"],
+		mapX: 45,
+		mapY: 85
+	},
+	{
+		id: 99,
+		name: "Lotus Palace Garden",
+		location: "Streets of Lotus Palace",
+		gate: "Lotus Palace",
+		entrance: "Lotus Palace",
+		boss: "Garden Keeper",
+		type: "Dungeon",
+		level: 50,
+		partySize: 4,
+		description: "The beautiful garden of Lotus Palace.",
+		keywords: ["lotus palace garden", "lpg"],
+		mapX: 47,
+		mapY: 87
+	},
+	{
+		id: 100,
+		name: "Blue Raven Territory",
+		location: "Streets of Lotus Palace",
+		gate: "Lotus Palace",
+		entrance: "Lotus Palace",
+		boss: "Raven Lord",
+		type: "Dungeon",
+		level: 52,
+		partySize: 4,
+		description: "Territory of the Blue Raven.",
+		keywords: ["blue raven territory", "brt", "blue raven"],
+		mapX: 49,
+		mapY: 89
+	},
+	{
+		id: 101,
+		name: "Loser's Exile Place",
+		location: "Streets of Lotus Palace",
+		gate: "Lotus Palace",
+		entrance: "Lotus Palace",
+		boss: "Exile Leader",
+		type: "Dungeon",
+		level: 54,
+		partySize: 4,
+		description: "A place where losers are exiled.",
+		keywords: ["loser's exile place", "losers exile place", "lep"],
+		mapX: 51,
+		mapY: 91
+	},
+	{
+		id: 102,
+		name: "Great Arena",
+		location: "Streets of Lotus Palace",
+		gate: "Lotus Palace",
+		entrance: "Lotus Palace",
+		boss: "Arena Champion",
+		type: "Dungeon",
+		level: 56,
+		partySize: 4,
+		description: "The great arena for battles.",
+		keywords: ["great arena", "ga"],
+		mapX: 53,
+		mapY: 93
+	},
+
+	// ==================== SAINT'S HAVEN ====================
+	{
+		id: 103,
+		name: "Saint's Haven",
+		location: "Saint's Haven",
+		gate: "Main City",
+		entrance: "Saint's Haven",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "The main city of Dragon Nest SEA.",
+		keywords: ["saint's haven", "saints haven", "sh", "main city"],
+		mapX: 50,
+		mapY: 50
+	},
+	{
+		id: 104,
+		name: "Cerro Pueblo",
+		location: "Saint's Haven",
+		gate: "North Gate",
+		entrance: "Cerro Pueblo",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "A small town near Saint's Haven.",
+		keywords: ["cerro pueblo", "cp"],
+		mapX: 48,
+		mapY: 45
+	},
+
+	// ==================== PRARIE / CALDEROCK ====================
+	{
+		id: 105,
+		name: "Calderock Village",
+		location: "Calderock",
+		gate: "Main Village",
+		entrance: "Calderock Village",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "A village in the prairie region.",
+		keywords: ["calderock village", "calderock", "cv"],
+		mapX: 30,
+		mapY: 60
+	},
+	{
+		id: 106,
+		name: "Mana Ridge",
+		location: "Calderock",
+		gate: "North Gate",
+		entrance: "Mana Ridge",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "A ridge filled with mana.",
+		keywords: ["mana ridge", "mr"],
+		mapX: 28,
+		mapY: 55
+	},
+	{
+		id: 107,
+		name: "Shadow Forest",
+		location: "Calderock",
+		gate: "East Gate",
+		entrance: "Shadow Forest Entrance",
+		boss: "Forest Spirit",
+		type: "Dungeon",
+		level: 10,
+		partySize: 4,
+		description: "A forest shrouded in shadow.",
+		keywords: ["shadow forest", "sf"],
+		mapX: 32,
+		mapY: 58
+	},
+	{
+		id: 108,
+		name: "Ancient Temple",
+		location: "Calderock",
+		gate: "East Gate",
+		entrance: "Ancient Temple Entrance",
+		boss: "Temple Guardian",
+		type: "Dungeon",
+		level: 15,
+		partySize: 4,
+		description: "An ancient temple with secrets.",
+		keywords: ["ancient temple", "at"],
+		mapX: 34,
+		mapY: 62
+	},
+
+	// ==================== LOTUS MARSH ====================
+	{
+		id: 109,
+		name: "Lotus Marsh",
+		location: "Lotus Marsh",
+		gate: "Main Town",
+		entrance: "Lotus Marsh",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "A marsh town with lotus flowers.",
+		keywords: ["lotus marsh", "lm"],
+		mapX: 40,
+		mapY: 35
+	},
+
+	// ==================== ARENDEL ====================
+	{
+		id: 110,
+		name: "Anu Arendel (City)",
+		location: "Anu Arendel",
+		gate: "Main City",
+		entrance: "Anu Arendel",
+		boss: "N/A",
+		type: "Town",
+		level: 1,
+		partySize: 1,
+		description: "The elven city of Anu Arendel.",
+		keywords: ["anu arendel city", "anu arendel town", "arendel"],
+		mapX: 85,
+		mapY: 60
+	},
+
+	// ==================== NESTS (Additional) ====================
+	{
+		id: 111,
+		name: "Apocalypse Nest",
+		location: "Hermalte Port",
+		gate: "South Gate",
+		entrance: "Hermalte Port Nest",
+		boss: "Apocalypse",
+		type: "Nest",
+		level: 50,
+		partySize: 4,
+		description: "The nest of the Apocalypse.",
+		keywords: ["apocalypse nest", "apoc", "an"],
+		mapX: 22,
+		mapY: 72
+	},
+	{
+		id: 112,
+		name: "Cerberus Nest",
+		location: "Saint's Haven",
+		gate: "North Gate",
+		entrance: "Cerro Pueblo Nest",
+		boss: "Cerberus",
+		type: "Nest",
+		level: 32,
+		partySize: 4,
+		description: "The nest of the three-headed Cerberus.",
+		keywords: ["cerberus nest", "cerberus", "cn"],
+		mapX: 46,
+		mapY: 42
+	},
+	{
+		id: 113,
+		name: "Minotaur Nest",
+		location: "Calderock",
+		gate: "East Gate",
+		entrance: "Ancient Temple",
+		boss: "Minotaur",
+		type: "Nest",
+		level: 24,
+		partySize: 4,
+		description: "The nest of the mighty Minotaur.",
+		keywords: ["minotaur nest", "minotaur", "mino"],
+		mapX: 36,
+		mapY: 64
+	},
+	{
+		id: 114,
+		name: "Elena's Nest",
+		location: "Calderock",
+		gate: "East Gate",
+		entrance: "Shadow Forest",
+		boss: "Elena",
+		type: "Nest",
+		level: 16,
+		partySize: 4,
+		description: "The nest of Elena.",
+		keywords: ["elena nest", "elena", "en"],
+		mapX: 33,
+		mapY: 56
+	},
+	{
+		id: 115,
+		name: "Dark Lair",
+		location: "Saint's Haven",
+		gate: "West Gate",
+		entrance: "Dark Lair Entrance",
+		boss: "Various Bosses",
+		type: "Special",
+		level: 40,
+		partySize: 4,
+		description: "A special dungeon with random bosses.",
+		keywords: ["dark lair", "dl"],
+		mapX: 44,
+		mapY: 55
+	}
+];
+
+// Location data for the map
+const locationData = [
+	{ name: "Saint's Haven", x: 50, y: 50, type: "city" },
+	{ name: "Calderock Village", x: 30, y: 60, type: "town" },
+	{ name: "Lotus Marsh", x: 40, y: 35, type: "town" },
+	{ name: "Hermalte Port", x: 15, y: 70, type: "town" },
+	{ name: "Anu Arendel", x: 85, y: 60, type: "city" },
+	{ name: "Riverwort Wharf", x: 50, y: 25, type: "town" },
+	{ name: "Rhadames", x: 30, y: 45, type: "town" },
+	{ name: "Merca's Heart", x: 80, y: 40, type: "city" },
+	{ name: "Foothills Black Mountain", x: 20, y: 90, type: "region" },
+	{ name: "Streets of Lotus Palace", x: 50, y: 90, type: "region" }
+];
+
+// Export for use
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = { dungeonData, locationData };
 }

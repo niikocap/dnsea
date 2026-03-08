@@ -1,25 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dragon Nest SEA Dungeon Finder</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<p class="title">Dragon Nest Dungeon Location Finder</p><br>
-		<input type="text" name="" placeholder="Input Search key"><br>
-		<button class="btn">Search</button>
-		<div class="data">
-			<p class="bld">Dungeon: <span class="dname"></span></p>
-			<p class="bld">Location: <span class="dloc"></span></p>
-			<p class="bld">Gate: <span class="dGate"></span></span></p>
-			<p class="bld">Entrance: <span class="dEnt"></span></p>
-			<p class="bld">Boss Name: <span class="dBoss"></span></p>
-		</div>
-		<p class="last">If you got any information about the dungeon and Mission Board. Click <a href="">Here</a></p>
+	<div class="app-container">
+		<!-- Header -->
+		<header class="header">
+			<div class="logo">
+				<i class="fas fa-dragon"></i>
+				<h1>Dragon Nest SEA</h1>
+			</div>
+			<p class="subtitle">Dungeon Location Finder</p>
+		</header>
+
+		<!-- Search Section -->
+		<section class="search-section">
+			<div class="search-container">
+				<i class="fas fa-search search-icon"></i>
+				<input type="text" id="searchInput" placeholder="Search dungeon by name or keyword..." autocomplete="off">
+				<div id="searchSuggestions" class="suggestions"></div>
+			</div>
+			<div class="filter-buttons">
+				<button class="filter-btn active" data-filter="all">All</button>
+				<button class="filter-btn" data-filter="Nest">Nests</button>
+				<button class="filter-btn" data-filter="Dungeon">Dungeons</button>
+				<button class="filter-btn" data-filter="Town">Towns</button>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<main class="main-content">
+			<!-- Map Section -->
+			<section class="map-section">
+				<h2><i class="fas fa-map"></i> World Map</h2>
+				<div class="map-container">
+					<div id="worldMap" class="world-map">
+						<!-- Map markers will be added by JavaScript -->
+					</div>
+					<div class="map-legend">
+						<div class="legend-item"><span class="marker city"></span> City</div>
+						<div class="legend-item"><span class="marker town"></span> Town</div>
+						<div class="legend-item"><span class="marker nest"></span> Nest</div>
+						<div class="legend-item"><span class="marker dungeon"></span> Dungeon</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Dungeon Info Panel -->
+			<section class="info-panel" id="infoPanel">
+				<div class="panel-header">
+					<h2 id="dungeonTitle">Select a Dungeon</h2>
+					<span class="dungeon-type" id="dungeonType"></span>
+				</div>
+				<div class="panel-content">
+					<div class="info-grid">
+						<div class="info-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<span class="label">Location:</span>
+							<span class="value" id="dungeonLocation">-</span>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-door-open"></i>
+							<span class="label">Gate:</span>
+							<span class="value" id="dungeonGate">-</span>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-sign-in-alt"></i>
+							<span class="label">Entrance:</span>
+							<span class="value" id="dungeonEntrance">-</span>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-skull"></i>
+							<span class="label">Boss:</span>
+							<span class="value" id="dungeonBoss">-</span>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-level-up-alt"></i>
+							<span class="label">Level:</span>
+							<span class="value" id="dungeonLevel">-</span>
+						</div>
+						<div class="info-item">
+							<i class="fas fa-users"></i>
+							<span class="label">Party Size:</span>
+							<span class="value" id="dungeonParty">-</span>
+						</div>
+					</div>
+					<div class="description-box">
+						<h3>Description</h3>
+						<p id="dungeonDescription">Click on a dungeon marker on the map or search above to see details.</p>
+					</div>
+					<div class="keywords-box">
+						<h3>Search Keywords</h3>
+						<div id="dungeonKeywords" class="keywords-list"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Dungeon List -->
+		<section class="dungeon-list-section">
+			<h2><i class="fas fa-list"></i> All Dungeons</h2>
+			<div class="dungeon-count">
+				<span id="dungeonCount">0</span> dungeons found
+			</div>
+			<div id="dungeonList" class="dungeon-list">
+				<!-- Dungeon cards will be added by JavaScript -->
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>Dragon Nest SEA Dungeon Finder | Data last updated: 2024</p>
+			<p class="disclaimer">This is a fan-made tool. Dragon Nest is a trademark of Eyedentity Games.</p>
+		</footer>
 	</div>
-	<script type="text/javascript" src="data.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+
+	<script src="data.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
